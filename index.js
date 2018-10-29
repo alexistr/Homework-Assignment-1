@@ -4,8 +4,8 @@
 */
 
 //dependencies
-http = require('http');
-url = require('url');
+const http = require('http');
+const url = require('url');
 
 //Instantiate server
 let httpServer = http.createServer( (req,res) => serverLogic(req,res) );
@@ -46,7 +46,6 @@ handlers.hello = (callback) => {
   callback(200,{'message':'Hello World'});
 }
 handlers.notFound = (callback) => {
-  console.log('404');
   callback(404);
 }
 
