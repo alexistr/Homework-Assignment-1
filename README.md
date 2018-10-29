@@ -1,11 +1,11 @@
 # Homework-Assignment-1
 The NodeJS Master Class Homework Assignment #1
 
-It will send back {'message' : 'Hello world'} to anybody who posts to the route /hello.
 
-The server listen on port 3000
+The server listens on port 3000, it will send back {'message' : 'Hello world'}
+to anybody who posts to the route "hello"
 
-It's heavly based on the lectures from the class except I've uses ES6.
+I've used ES6.
 
-git clone https://github.com/alexistr/Homework-Assignment-1.git
-node index.js
+I realize the "end" event for the request do not occure if I don't listen for the "data" event.
+Is this normal behaviour?
